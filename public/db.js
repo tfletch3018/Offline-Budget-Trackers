@@ -19,7 +19,7 @@ request.onupgradeneeded = function (e) {
   }
 };
 
-request.onerror = function (event) {
+request.onerror = function (e) {
   // log error here
   console.log(`Woops! ${e.target.errorCode}`);
 };
@@ -28,7 +28,6 @@ request.onerror = function (event) {
 
 function checkDatabase() {
   console.log('check db invoked');
-
   // open a transaction on your pending db
   let transaction = db.transaction(['BudgetStore'], 'readwrite');
 
