@@ -57,7 +57,7 @@ self.addEventListener('fetch', function(evt) {
     }
 
     evt.respondWith(
-        caches.open(CACHE_NAME).then(CACHE => {
+        caches.open(CACHE_NAME).then( cache => {
             return cache.match(evt.request).then(response => {
                 return response || fetch(evt.request);
             });
