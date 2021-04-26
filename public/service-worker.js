@@ -3,6 +3,8 @@ const DATA_CACHE_NAME = 'data-cache-v1';
 
 const FILES_TO_CACHE = [
     '/',
+    '/favicon.ico',
+    '/maifest.webmanifest',
     '/index.html',
     '/index.js',
     '/db.js',
@@ -57,7 +59,7 @@ self.addEventListener('fetch', function(evt) {
     }
 
     evt.respondWith(
-        caches.open(CACHE_NAME).then( cache => {
+        caches.open(CACHE_NAME).then(cache => {
             return cache.match(evt.request).then(response => {
                 return response || fetch(evt.request);
             });
