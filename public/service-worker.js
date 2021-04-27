@@ -3,7 +3,8 @@ const DATA_CACHE_NAME = 'data-cache-v1';
 
 const FILES_TO_CACHE = [
     '/',
-    '/favicon.ico',
+    '/public/icons/icon-192x192.png',
+    '/public/icons/icon-512x512.png',
     '/maifest.webmanifest',
     '/index.html',
     '/index.js',
