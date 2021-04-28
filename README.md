@@ -28,6 +28,7 @@ THEN that will be shown on the page, and added to their transaction history when
 ```
 
 ## Usage
+<img src="images\demo.gif" />
 <img src="images\Screenshot1.png" />
 <img src="images\Screenshot2.png" />
 <img src="images\Screenshot3.png" />
@@ -63,3 +64,5 @@ SOFTWARE.
 [My repo](https://github.com/tfletch3018/Offline-Budget-Trackers)
 
 [Deployed on Heroku](https://agile-bastion-05761.herokuapp.com/)
+
+[Watch the demo!](https://drive.google.com/file/d/1eBvttP8EjFjHpAcD2e0bDue_pMGdnTI8/preview)
